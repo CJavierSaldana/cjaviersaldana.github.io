@@ -1,0 +1,200 @@
+/* --- Modern Cyber Hacking Theme --- */
+
+/* --- Variables --- */
+:root {
+    --bg-color: #0d0d0d; /* Very dark grey */
+    --primary-text-color: #00ff00; /* Neon green */
+    --accent-color-blue: #00aaff; /* Electric blue */
+    --glow-color-green: #00ff00;
+    --glow-color-blue: #00aaff;
+    --font-family-main: 'Fira Code', monospace;
+}
+
+/* --- General Styles --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    font-family: var(--font-family-main);
+    font-weight: 400; /* Regular weight for Fira Code */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    /* Subtle scan lines effect */
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.02), /* Very faint line */
+        rgba(255, 255, 255, 0.02) 1px,
+        transparent 1px,
+        transparent 3px /* Adjust spacing of scan lines */
+    );
+}
+
+/* --- Header --- */
+header {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-text-color); /* Neon green border */
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: var(--primary-text-color);
+    text-shadow: 0 0 5px var(--glow-color-green),
+                 0 0 10px var(--glow-color-green),
+                 0 0 15px var(--glow-color-green);
+    margin-bottom: 5px;
+    font-weight: 700; /* Bold for name */
+}
+
+header p { /* Headline */
+    font-size: 1.2em;
+    color: var(--primary-text-color);
+    text-shadow: 0 0 3px var(--glow-color-green);
+    margin-bottom: 10px;
+    font-weight: 500; /* Medium weight for headline */
+}
+
+header div p { /* Contact info paragraphs */
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-weight: 300; /* Lighter for contact details */
+}
+
+/* --- Sections --- */
+section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-top: 1px dashed var(--primary-text-color); /* Dashed neon green border */
+}
+
+section:first-of-type { /* Summary section, no top border if header has bottom border */
+    border-top: none;
+}
+
+
+section h4 { /* Section titles: Summary, Top Skills, etc. */
+    font-size: 1.8em;
+    color: var(--primary-text-color);
+    text-shadow: 0 0 4px var(--glow-color-green), 0 0 8px var(--glow-color-green);
+    margin-bottom: 15px;
+    font-weight: 600; /* Semi-bold for section titles */
+    display: inline-block; /* Allows border to wrap content */
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid var(--accent-color-blue); */ /* Optional: underline for section titles */
+}
+
+/* --- Specific Section Styling --- */
+
+/* Summary */
+#summary p {
+    font-size: 1em;
+    font-weight: 300; /* Lighter for paragraph text */
+}
+
+/* Skills & Certifications */
+#skills ul, #certifications p {
+    padding-left: 0;
+    list-style: none;
+}
+
+#skills li {
+    display: inline-block; /* Or block if preferred */
+    background-color: rgba(0, 255, 0, 0.05); /* Faint green background */
+    border: 1px solid var(--primary-text-color);
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px; /* Slight rounding */
+    font-size: 0.95em;
+    box-shadow: 0 0 5px var(--glow-color-green) inset; /* Inner glow */
+}
+
+#certifications p {
+    font-size: 1em;
+    background-color: rgba(0, 255, 0, 0.05);
+    border: 1px solid var(--primary-text-color);
+    padding: 8px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 0 0 5px var(--glow-color-green) inset;
+}
+
+
+/* Experience */
+#experience article {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 2px solid var(--accent-color-blue); /* Blue accent for timeline feel */
+}
+
+#experience h5 { /* Job Title */
+    font-size: 1.3em;
+    color: var(--primary-text-color);
+    text-shadow: 0 0 3px var(--glow-color-green);
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+#experience article p strong { /* Company Name */
+    font-weight: 600; /* Bolder for company name */
+    color: var(--accent-color-blue); /* Blue for company name */
+    text-shadow: 0 0 3px var(--glow-color-blue);
+}
+
+#experience article p { /* Company/Dates/Location line */
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+#experience ul {
+    padding-left: 20px;
+    list-style-type: none; /* Remove default bullets */
+}
+
+#experience ul li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    font-weight: 300;
+    position: relative; /* For custom bullet */
+}
+
+#experience ul li::before {
+    content: '>'; /* Custom bullet */
+    position: absolute;
+    left: -20px;
+    color: var(--accent-color-blue); /* Blue bullet */
+    font-weight: 600;
+}
+
+/* Education */
+#education article {
+    padding-left: 15px;
+    border-left: 2px solid var(--accent-color-blue);
+}
+#education article p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+#education article p strong { /* Degree Name */
+    font-weight: 600;
+    color: var(--accent-color-blue);
+    text-shadow: 0 0 3px var(--glow-color-blue);
+}
+
+
+/* --- Links --- */
+a {
+    color: var(--accent-color-blue);
+    text-decoration: none;
+    text-shadow: 0 0 3px var(--glow-color-blue);
+}
+
+a:hover {
+    color: var(--primary-text-color); /* Green on hover */
+    text-decoration: underline;
+    text-shadow: 0 0 5px var(--glow-color-green), 0 0 10px var(--glow-color-green);
+}
+
+/* --- Utility --- */
+/* Add any utility classes if needed */
