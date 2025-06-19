@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+* {
+    min-height: 0;
+    min-width: 0;
+    box-sizing: border-box;
+    transform-origin: 0px 0px 0px;
+}
+
+p:blank, li:blank, div:blank, section:blank {
+    display: none;
+}
+
+p:empty, li:empty, div:empty, section:empty {
+    display: none;
+}
+
+p:-moz-only-whitespace, li:-moz-only-whitespace, div:-moz-only-whitespace, section:-moz-only-whitespace {
+    display: none;
+}
+
+/* Page Variables */
+
+:root {
+    --main-width: 74%;
+    --header-height: 1.2in;
+    --sidebar-width: calc(100% - var(--main-width));
+
+    /* Developer Theme Colors & Fonts */
+    --dark-bg: #282c34; /* Dark background for the sheet */
+    --light-text: #abb2bf; /* Primary text color */
+    --accent-color: #61afef; /* Blue for headings, links */
+    --secondary-accent-color: #98c379; /* Green for other highlights if needed */
+    --skill-bg: #3a3f4b; /* Background for skill items */
+    --skill-border: var(--accent-color); /* Border for skill items */
+    --mono-font: 'Roboto Mono', monospace;
+    --sans-font: "Montserrat", "Trebuchet MS", Helvetica, sans-serif; /* Existing sans-serif */
+    --serif-font: "Cardo", Georgia, serif; /* Existing serif */
+}
+
+body {
+    font-size: 0.95em;
+    margin: 0 auto;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: ink;
+    hyphens: auto;
+    color: var(--light-text); /* Default text color for dark theme */
+}
+
+.sheet { /* Overriding from paper.css for dark theme */
+    background-color: var(--dark-bg);
+}
+
+#save > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+}
+
+.summary {
+    font-size: 105%;
+}
+
+/* Misc */
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+abbr[title] {
+    text-decoration: none;
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li + li {
+    margin-top: 0.4em;
+}
+
+.fa, .fab {
+    text-align: center;
+    min-width: 1em;
+}
+
+li .fa, li .fab {
+    margin-right: 0.3em;
+}
+
+/* Page layout */
+
+#save > section:first-of-type > aside {
+    flex-basis: var(--sidebar-width);
+    padding: 0.1618in 0 0.1618in 0.1618in;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-bg); /* Ensure aside also has dark background */
+}
+
+#save > section:first-of-type > aside > section + section {
+    margin-top: 2em;
+}
+
+#save > section:first-of-type > aside > section:last-child {
+    margin-top: auto;
+}
+
+#save > section:first-of-type > section { /* This is the main content area */
+    flex-basis: var(--main-width);
+    display: flex;
+    flex-direction: column;
+}
+
+#save > section:first-of-type > section > header {
+    flex-basis: var(--header-height);
+    flex-grow: 0;
+    padding: 0.1618in;
+}
+
+#save > section:first-of-type > section > section {
+    flex-grow: 1;
+    padding: 0.1618in;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-bg); /* Ensure main content area also has dark background */
+}
+
+#save > section:first-of-type > section > section > section + section {
+    margin-top: 1em;
+}
+
+#save > section:first-of-type > section > section > section:last-child {
+    margin-top: auto;
+}
+
+/* Styling for h6 - section titles */
+h6 {
+    font-family: var(--mono-font);
+    color: var(--accent-color);
+    font-weight: 700; /* Bold for mono font headings */
+    letter-spacing: 0.05em; /* Slight spacing for mono */
+}
+
+/* Name header text (under the SVG name) */
+#save > section:first-of-type > section > header > h6 {
+    color: var(--light-text); /* Light text for headline */
+    font-family: var(--sans-font); /* Sans-serif for headline */
+    font-weight: 300; /* Lighter weight for headline */
+    letter-spacing: normal;
+}
+
+hr {
+    border-top: 1px solid var(--accent-color);
+}
+
+a, a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact ul li p, .contact ul li p a {
+    color: var(--light-text); /* Ensure contact text is light */
+}
+
+.references address {
+    font-style: normal;
+    font-weight: 300;
+    color: var(--light-text);
+}
+
+.references address:first-line {
+    font-weight: 400;
+    color: var(--light-text);
+}
+
+.references address + address,
+.references address + p {
+    padding-top: 0.5em;
+}
+
+/* Skills */
+
+.skills {
+    font-size: 92%;
+}
+
+.skills > ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.skills > ul > li {
+    display: block;
+    float: left;
+    margin: 4px 4px 0 0; /* Adjusted margin */
+}
+
+.skills > ul > li > span {
+    background-color: var(--skill-bg);
+    border: 1px solid var(--skill-border);
+    border-radius: 4px; /* Slightly more rounded */
+    color: var(--light-text);
+    padding: 5px 10px; /* Adjusted padding */
+    display: inline-block;
+    font-family: var(--mono-font); /* Monospaced font for skills */
+    font-size: 0.9em; /* Slightly smaller for mono */
+}
+
+/* Experience & Education */
+
+.education ol,
+.experience ol {
+    margin: 0;
+    padding: 0;
+}
+
+.experience ol {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li {
+    margin: 0;
+    padding: 0;
+    flex-basis: 100%;
+    font-weight: 300;
+}
+
+.education ol > li {
+    font-weight: 300;
+}
+
+.experience ol > li + li {
+    margin-top: 1em;
+}
+
+.education ol > li div,
+.experience ol > li header {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience ol > li > span, /* Company Name / Location in Experience */
+.education ol > li div > span { /* Institution Name / Details in Education */
+    font-weight: 300; /* Lighter for secondary info */
+    color: var(--light-text);
+}
+
+.education ol > li p, /* Degree name */
+.experience ol > li header p { /* Job Title */
+    font-weight: 700; /* Bolder for titles */
+    color: var(--light-text);
+}
+
+.experience ol > li header p {
+    font-size: 110%;
+    font-family: var(--sans-font); /* Sans-serif for job titles */
+}
+.education ol > li p { /* Degree name */
+    font-family: var(--sans-font); /* Sans-serif for degree names */
+}
+
+
+.education ol > li div > *:last-child, /* Date in Education */
+.experience ol > li header > *:last-child { /* Date in Experience */
+    margin-left: auto;
+    font-family: var(--mono-font); /* Monospaced for dates */
+    font-size: 0.9em;
+    color: var(--secondary-accent-color); /* Green for dates */
+}
+
+.experience ol > li ul {
+    padding-top: 0.5em;
+    color: var(--light-text); /* Ensure bullet point text is light */
+}
+
+.experience ol > li ul li {
+    list-style-type: circle;
+    margin-left: 1.618em;
+    /* Marker color will be inherited from text color (var(--light-text)) */
+}
