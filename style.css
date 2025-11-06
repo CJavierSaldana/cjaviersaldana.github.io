@@ -93,12 +93,24 @@ section h4 { /* Section titles: Summary, Top Skills, etc. */
 }
 
 /* Skills & Certifications */
-#skills ul, #certifications p {
+#skills ul, #certifications p, #languages ul {
     padding-left: 0;
     list-style: none;
 }
 
-#skills li {
+#skills .skill-category {
+    margin-bottom: 20px;
+}
+
+#skills .skill-category h5 {
+    font-size: 1.1em;
+    color: var(--accent-color-blue);
+    text-shadow: 0 0 3px var(--glow-color-blue);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#skills li, #languages li {
     display: inline-block; /* Or block if preferred */
     background-color: rgba(0, 255, 0, 0.05); /* Faint green background */
     border: 1px solid var(--primary-text-color);
