@@ -3,183 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C. Javier Saldaña - CV</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Carlos Javier Saldaña, CTO and solutions architect. A cyberpunk command center for cloud, AI, healthcare technology, and systems modernization.">
+    <meta name="theme-color" content="#080812">
+    <meta property="og:title" content="Carlos Javier Saldaña | Neon Systems Architect">
+    <meta property="og:description" content="CTO at Pah Venture. Cloud, AI, platform modernization, and product engineering.">
+    <meta property="og:type" content="website">
+    <title>CJavierSaldana // Neon Systems Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Carlos Javier Gutierrez Saldaña</h1>
-        <p>Solutions Architect | Chief Technology Officer at Pah Venture</p>
-        <div>
-            <p>Location: Barranquilla, Atlántico, Colombia</p>
-            <p>Email: <a href="https://www.linkedin.com/in/cjaviersaldana/">contact via LinkedIn</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/cjaviersaldana/" target="_blank">www.linkedin.com/in/cjaviersaldana</a></p>
-            <p>Website: <a href="https://cjaviersaldana.github.io" target="_blank">cjaviersaldana.github.io</a></p>
-            <p><em>Open to remote positions and relocation</em></p>
+    <canvas id="neon-grid" aria-hidden="true"></canvas>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="shell-header">
+        <a class="brand" href="#top" aria-label="Carlos Javier Saldaña home">
+            <span class="brand-mark">CJS</span>
+            <span class="brand-copy">
+                <span>cjaviersaldana</span>
+                <small>root@barranquilla</small>
+            </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#signal">Signal</a>
+            <a href="#stack">Stack</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="status-pill" aria-label="System status">
+            <span class="pulse"></span>
+            <span>ONLINE</span>
         </div>
     </header>
 
-    <section id="summary">
-        <h4>Summary</h4>
-        <p>Accomplished and results-oriented Solutions Architect with 15 years of experience in the Microsoft ecosystem, specializing in transformative AI solutions. Proven expert in architecting and implementing scalable, secure, and cost-effective data frameworks that empower AI agents and personnel. Possesses a unique blend of executive-level strategy and hands-on technical leadership, demonstrated as the founder of a successful AI-driven venture. Spearheaded the acquisition and modernization of a company, integrating AI across all sectors to achieve profitability and stability. Proven ability to lead complex cloud migrations from legacy Windows systems to modern, Linux-based, cloud-native infrastructures, resulting in over 80% cost savings. Acknowledged for building and mentoring high-performing teams and translating complex business needs into cutting-edge technological solutions that deliver lasting impact.</p>
-    </section>
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">NEON OPS PROFILE // NODE-0800</p>
+                <h1 id="hero-title" data-text="Carlos Javier Saldaña">Carlos Javier Saldaña</h1>
+                <p class="role-line">CTO at Pah Venture. Solutions architect. AI systems operator. Legacy platform exorcist.</p>
+                <p class="intro">
+                    I build the kind of infrastructure that keeps healthcare products, AI workflows,
+                    and business-critical systems alive after the demo is over.
+                </p>
+                <div class="hero-actions" aria-label="Contact links">
+                    <a class="action primary" href="https://www.linkedin.com/in/cjaviersaldana/">Open secure channel</a>
+                    <a class="action" href="https://www.linkedin.com/in/cjaviersaldana/" target="_blank" rel="noreferrer">LinkedIn uplink</a>
+                    <a class="action" href="https://github.com/CJavierSaldana" target="_blank" rel="noreferrer">GitHub trace</a>
+                </div>
+            </div>
 
-    <section id="skills">
-        <h4>Skills</h4>
-        <div class="skill-category">
-            <h5>Cloud Technologies</h5>
-            <ul>
-                <li>Azure</li>
-                <li>AWS</li>
-                <li>Google Cloud</li>
-                <li>Hybrid Cloud Environments</li>
-                <li>Cloud-Native Architectures</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Helm</li>
-                <li>ArgoCD</li>
-                <li>Observability</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h5>AI & Machine Learning</h5>
-            <ul>
-                <li>Artificial Intelligence (AI)</li>
-                <li>AI-Enhanced Application Development</li>
-                <li>AI Agent Development</li>
-                <li>Multi-Agent Systems</li>
-                <li>AI-Driven Mentoring</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h5>Development & Architecture</h5>
-            <ul>
-                <li>Software Architecture</li>
-                <li>Full-Stack Development</li>
-                <li>C#</li>
-                <li>.NET Core</li>
-                <li>ASP.NET Core</li>
-                <li>Node.js</li>
-                <li>React.js</li>
-                <li>AngularJS</li>
-                <li>Entity Framework</li>
-                <li>ASP.NET (MVC & WebForms)</li>
-                <li>WinForms</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h5>DevOps & Security</h5>
-            <ul>
-                <li>DevSecOps</li>
-                <li>Jenkins</li>
-                <li>Git</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h5>Operating Systems</h5>
-            <ul>
-                <li>Linux</li>
-                <li>Windows</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h5>Methodologies</h5>
-            <ul>
-                <li>Agile</li>
-                <li>Scrum</li>
-                <li>DevOps</li>
-            </ul>
-        </div>
-    </section>
+            <aside class="console" aria-label="Profile console">
+                <div class="console-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <strong>profile.boot</strong>
+                </div>
+                <div class="console-body">
+                    <p><span class="prompt">&gt;</span> load identity</p>
+                    <p class="console-line">name: <strong>Carlos Javier Gutierrez Saldaña</strong></p>
+                    <p class="console-line">base: Barranquilla, Colombia</p>
+                    <p class="console-line">mode: remote / relocation ready</p>
+                    <p><span class="prompt">&gt;</span> scan specialties</p>
+                    <ul class="terminal-list">
+                        <li>AI-enhanced product engineering</li>
+                        <li>Cloud-native and hybrid architecture</li>
+                        <li>Legacy modernization with serious cost pressure</li>
+                        <li>Healthcare systems in regulated environments</li>
+                    </ul>
+                    <p class="bootline">SYSTEM READY<span class="cursor"></span></p>
+                </div>
+            </aside>
+        </section>
 
-    <section id="certifications">
-        <h4>Certifications</h4>
-        <p>Microsoft Certified Professional (MCP)</p>
-    </section>
+        <section class="signal-grid" id="signal" aria-label="Career signal">
+            <article class="metric">
+                <span class="metric-value">15+</span>
+                <span class="metric-label">years in software systems</span>
+            </article>
+            <article class="metric">
+                <span class="metric-value">80%</span>
+                <span class="metric-label">cost reduction wins on migrations</span>
+            </article>
+            <article class="metric">
+                <span class="metric-value">3</span>
+                <span class="metric-label">major clouds in production playbooks</span>
+            </article>
+            <article class="metric">
+                <span class="metric-value">B2</span>
+                <span class="metric-label">English, native Spanish</span>
+            </article>
+        </section>
 
-    <section id="experience">
-        <h4>Work Experience</h4>
-        <article>
-            <h5>Chief Technology Officer</h5>
-            <p><strong>Pah Venture</strong> | May 2024 - Present | Barranquilla, Atlántico, Colombia</p>
-            <ul>
-                <li>Spearheaded the acquisition and complete modernization of MatrixMD, a healthcare technology company. Integrated AI across all sectors, leading to increased profitability and long-term stability.</li>
-                <li>Architected and developed innovative technology solutions for the Colombian healthcare sector, ensuring strict compliance with Ministry of Health regulations.</li>
-                <li>Improved operational efficiency for medical clinics by integrating advanced automation and artificial intelligence to streamline internal processes.</li>
-                <li>Designed and deployed versatile cloud architectures, utilizing cloud-native technologies for in-house systems and hybrid cloud models for large-scale enterprise solutions.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Software Architect Consultant</h5>
-            <p><strong>Self-employed</strong> | April 2022 - May 2024</p>
-            <ul>
-                <li>Achieved over 80% in cost savings for clients by selecting and implementing optimal software and infrastructure solutions during platform migrations.</li>
-                <li>Led application modernization projects, migrating legacy Windows systems to cloud-based architectures using .NET Core, ASP.NET Core, and Azure/Kubernetes.</li>
-                <li>Designed and implemented DevSecOps pipelines using Docker, Jenkins, and Git, ensuring secure and automated deployment practices.</li>
-                <li>Trained and mentored development teams on modern software engineering practices, improving team autonomy and delivery quality.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Senior Software Development Engineer</h5>
-            <p><strong>Gorilla Logic</strong> | July 2020 - March 2022 | Colorado, United States</p>
-            <ul>
-                <li>Contributed to innovation teams by integrating, enabling, and maintaining features for platforms handling thousands of concurrent users.</li>
-                <li>Enabled globally accessible portals by leveraging hybrid cloud usage with AWS, Azure, and Google Cloud.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Software Architect</h5>
-            <p><strong>Impexium</strong> | May 2019 - August 2020 | McLean, Virginia, United States</p>
-            <ul>
-                <li>Developed, implemented, and supported a membership management platform built on .NET technologies and hosted on Azure.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Senior Software Development Engineer</h5>
-            <p><strong>NSerio Corp</strong> | August 2015 - March 2018 | Fort Lauderdale, Florida, United States</p>
-            <ul>
-                <li>Implemented, developed, and maintained extension applications for the Relativity document audit platform.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Lead Software Development Engineer</h5>
-            <p><strong>RGC Asesores y Consultores en Salud S.A.</strong> | May 2014 - July 2015 | Bogota, D.C., Colombia</p>
-            <ul>
-                <li>Created new structures to implement web improvements and allow the application to support more users.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Software Developer</h5>
-            <p><strong>Central de Inversiones S.A. -CISA</strong> | January 2013 - May 2014 | Bogota, D.C., Colombia</p>
-            <ul>
-                <li>Led the implementation of web applications to replace legacy WinForms enterprise applications.</li>
-            </ul>
-        </article>
-        <article>
-            <h5>Software Developer</h5>
-            <p><strong>Systems y Solutions LTDA</strong> | January 2012 - January 2013 | Bogota, D.C., Colombia</p>
-            <ul>
-                <li>Member of the migration team for a client-server application to WebForms technologies.</li>
-            </ul>
-        </article>
-    </section>
+        <section class="section-block" aria-labelledby="summary-title">
+            <div class="section-kicker">mission log</div>
+            <h2 id="summary-title">Architecting systems that survive contact with reality.</h2>
+            <div class="split">
+                <p>
+                    I work where product pressure, aging platforms, cloud economics, and AI ambition collide.
+                    My focus is practical architecture: secure enough to trust, lean enough to operate, and clear
+                    enough for teams to keep moving without waiting for permission.
+                </p>
+                <p>
+                    At Pah Venture I lead technology across healthcare products and modernization efforts,
+                    including MatrixMD, where AI-assisted workflows and cloud-native infrastructure are used
+                    to make operational systems faster, cheaper, and more stable.
+                </p>
+            </div>
+        </section>
 
-    <section id="education">
-        <h4>Education</h4>
-        <article>
-            <p><strong>Bachelor of Technology, Computer Software Engineering</strong></p>
-            <p>Universidad Distrital Francisco José de Caldas | January 2010 - June 2014</p>
-        </article>
-    </section>
+        <section class="section-block" id="stack" aria-labelledby="stack-title">
+            <div class="section-kicker">loaded modules</div>
+            <h2 id="stack-title">Stack and operating surface.</h2>
+            <div class="module-grid">
+                <article class="module">
+                    <h3>Cloud</h3>
+                    <p>Azure, AWS, Google Cloud, Cloudflare, hybrid environments, cloud-native systems.</p>
+                </article>
+                <article class="module">
+                    <h3>AI Systems</h3>
+                    <p>AI agents, multi-agent workflows, AI-enhanced development, operational automation.</p>
+                </article>
+                <article class="module">
+                    <h3>Architecture</h3>
+                    <p>C#, .NET, ASP.NET Core, Node.js, React, AngularJS, platform modernization.</p>
+                </article>
+                <article class="module">
+                    <h3>Delivery</h3>
+                    <p>Docker, Kubernetes, Helm, ArgoCD, Jenkins, Git, observability, DevSecOps.</p>
+                </article>
+                <article class="module">
+                    <h3>Healthcare Tech</h3>
+                    <p>Colombian healthcare workflows, Ministry of Health constraints, clinic operations.</p>
+                </article>
+                <article class="module">
+                    <h3>Systems</h3>
+                    <p>Linux-first production operations, Windows legacy exits, cost-aware infrastructure.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="languages">
-        <h4>Languages</h4>
-        <ul>
-            <li>Spanish (Native)</li>
-            <li>English (B2 - Upper-Intermediate)</li>
-        </ul>
-    </section>
+        <section class="section-block" id="timeline" aria-labelledby="timeline-title">
+            <div class="section-kicker">career trace</div>
+            <h2 id="timeline-title">Recent work and legacy trail.</h2>
+            <div class="timeline">
+                <article class="event featured">
+                    <div class="event-meta">
+                        <span>2024 - Present</span>
+                        <strong>Pah Venture</strong>
+                    </div>
+                    <div class="event-body">
+                        <h3>Chief Technology Officer</h3>
+                        <p>
+                            Leading technology strategy, product modernization, and AI integration for Pah Venture,
+                            including MatrixMD healthcare systems and cloud-native operating platforms.
+                        </p>
+                    </div>
+                </article>
+                <article class="event">
+                    <div class="event-meta">
+                        <span>2022 - 2024</span>
+                        <strong>Self-employed</strong>
+                    </div>
+                    <div class="event-body">
+                        <h3>Software Architect Consultant</h3>
+                        <p>
+                            Migrated legacy workloads, designed DevSecOps pipelines, and helped teams lower
+                            infrastructure cost while improving delivery quality.
+                        </p>
+                    </div>
+                </article>
+                <article class="event">
+                    <div class="event-meta">
+                        <span>2020 - 2022</span>
+                        <strong>Gorilla Logic</strong>
+                    </div>
+                    <div class="event-body">
+                        <h3>Senior Software Development Engineer</h3>
+                        <p>
+                            Built and maintained globally accessible features across hybrid cloud environments
+                            for platforms with high concurrency expectations.
+                        </p>
+                    </div>
+                </article>
+                <article class="event">
+                    <div class="event-meta">
+                        <span>2012 - 2020</span>
+                        <strong>Enterprise systems</strong>
+                    </div>
+                    <div class="event-body">
+                        <h3>.NET Engineer and Software Architect</h3>
+                        <p>
+                            Delivered membership platforms, e-discovery extensions, healthcare web systems,
+                            and migrations away from older desktop and WebForms stacks.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
+        <section class="section-block contact-section" id="contact" aria-labelledby="contact-title">
+            <div>
+                <div class="section-kicker">open port</div>
+                <h2 id="contact-title">Send a signal.</h2>
+                <p>
+                    For architecture work, AI product engineering, modernization, or weird systems that need
+                    a calm operator, this node is reachable.
+                </p>
+            </div>
+            <div class="contact-panel">
+                <a href="https://www.linkedin.com/in/cjaviersaldana/">contact via LinkedIn</a>
+                <a href="https://www.linkedin.com/in/cjaviersaldana/" target="_blank" rel="noreferrer">linkedin.com/in/cjaviersaldana</a>
+                <a href="https://cjaviersaldana.github.io" target="_blank" rel="noreferrer">cjaviersaldana.github.io</a>
+                <span>Microsoft Certified Professional</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>NEON NODE // CJS</span>
+        <span>Built for GitHub Pages</span>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById("neon-grid");
+        const ctx = canvas.getContext("2d");
+        const chars = "01<>/\\[]{}#@$AI.NETCLOUD";
+        let width = 0;
+        let height = 0;
+        let dpr = 1;
+        let columns = [];
+        let rafId = 0;
+
+        function resize() {
+            dpr = Math.min(window.devicePixelRatio || 1, 2);
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = Math.floor(width * dpr);
+            canvas.height = Math.floor(height * dpr);
+            canvas.style.width = `${width}px`;
+            canvas.style.height = `${height}px`;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            const columnCount = Math.ceil(width / 24);
+            columns = Array.from({ length: columnCount }, (_, index) => ({
+                x: index * 24,
+                y: Math.random() * height,
+                speed: 0.6 + Math.random() * 1.8,
+                char: chars[Math.floor(Math.random() * chars.length)]
+            }));
+        }
+
+        function drawGrid(time) {
+            const horizon = height * 0.55;
+            ctx.save();
+            ctx.globalAlpha = 0.72;
+            ctx.strokeStyle = "#17f7ff";
+            ctx.lineWidth = 1;
+
+            for (let y = horizon; y < height + 80; y += 38) {
+                const depth = (y - horizon) / (height - horizon);
+                ctx.globalAlpha = Math.min(0.9, depth * 0.75);
+                ctx.beginPath();
+                ctx.moveTo(0, y + Math.sin(time / 450 + y) * 2);
+                ctx.lineTo(width, y + Math.cos(time / 470 + y) * 2);
+                ctx.stroke();
+            }
+
+            ctx.globalAlpha = 0.55;
+            for (let x = -width; x <= width * 2; x += 80) {
+                ctx.beginPath();
+                ctx.moveTo(width / 2, horizon);
+                ctx.lineTo(x + Math.sin(time / 700 + x) * 16, height);
+                ctx.stroke();
+            }
+            ctx.restore();
+        }
+
+        function drawSkyline(time) {
+            const base = height * 0.58;
+            const blockWidth = Math.max(38, width / 28);
+            ctx.save();
+            ctx.fillStyle = "rgba(7, 8, 18, 0.86)";
+            ctx.strokeStyle = "rgba(255, 43, 214, 0.75)";
+            ctx.lineWidth = 1;
+
+            for (let x = -blockWidth; x < width + blockWidth; x += blockWidth) {
+                const seed = Math.sin(x * 0.021) * 0.5 + 0.5;
+                const towerHeight = 70 + seed * 180 + Math.sin(time / 900 + x) * 8;
+                const top = base - towerHeight;
+                ctx.fillRect(x, top, blockWidth * 0.82, towerHeight);
+                ctx.strokeRect(x, top, blockWidth * 0.82, towerHeight);
+
+                ctx.fillStyle = seed > 0.45 ? "rgba(255, 217, 61, 0.72)" : "rgba(23, 247, 255, 0.62)";
+                for (let wy = top + 18; wy < base - 12; wy += 26) {
+                    if ((Math.floor(wy + x) % 3) !== 0) {
+                        ctx.fillRect(x + 8, wy, blockWidth * 0.18, 3);
+                        ctx.fillRect(x + blockWidth * 0.48, wy, blockWidth * 0.18, 3);
+                    }
+                }
+                ctx.fillStyle = "rgba(7, 8, 18, 0.86)";
+            }
+            ctx.restore();
+        }
+
+        function drawRain() {
+            ctx.save();
+            ctx.font = "14px 'Share Tech Mono', monospace";
+            columns.forEach((column) => {
+                const alpha = 0.18 + Math.random() * 0.35;
+                ctx.fillStyle = `rgba(97, 255, 107, ${alpha})`;
+                ctx.fillText(column.char, column.x, column.y);
+                column.y += column.speed;
+                if (column.y > height + 40) {
+                    column.y = -40;
+                    column.char = chars[Math.floor(Math.random() * chars.length)];
+                } else if (Math.random() > 0.96) {
+                    column.char = chars[Math.floor(Math.random() * chars.length)];
+                }
+            });
+            ctx.restore();
+        }
+
+        function render(time) {
+            ctx.clearRect(0, 0, width, height);
+            const gradient = ctx.createLinearGradient(0, 0, width, height);
+            gradient.addColorStop(0, "#080812");
+            gradient.addColorStop(0.5, "#10112b");
+            gradient.addColorStop(1, "#05050b");
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+
+            drawRain();
+            drawSkyline(time);
+            drawGrid(time);
+
+            rafId = requestAnimationFrame(render);
+        }
+
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        resize();
+        window.addEventListener("resize", resize, { passive: true });
+
+        if (!prefersReducedMotion.matches) {
+            rafId = requestAnimationFrame(render);
+        } else {
+            render(0);
+            cancelAnimationFrame(rafId);
+        }
+    </script>
 </body>
 </html>
